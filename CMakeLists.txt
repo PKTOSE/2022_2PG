@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.23)
+project(programming_and_test2 C)
+
+set(CMAKE_C_STANDARD 17)
+
+add_executable(programming_and_test2 main.c)
+
+add_executable(assignment1 week2/assignment1.c)
+
+add_executable(assignment2 week2/assignment2.c)
+add_executable(week4_week4 week4/week4.c)
+add_executable(week5_week5_1 week5/week5_1.c)
+add_executable(week5_week5_2 week5/week5_2.c)
+
+add_executable(week6_week6_1 week6/week6_1.c)
+add_executable(week6_week6_2 week6/week6_2.c)
