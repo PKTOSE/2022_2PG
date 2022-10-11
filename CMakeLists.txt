@@ -14,3 +14,5 @@ add_executable(week5_week5_2 week5/week5_2.c)
 
 add_executable(week6_week6_1 week6/week6_1.c)
 add_executable(week6_week6_2 week6/week6_2.c)
+add_executable(week6_week6_3 week6/week6_3.c)
+add_executable(week6_week6_4 week6/week6_4.c)
