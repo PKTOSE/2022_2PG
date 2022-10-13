@@ -4,6 +4,7 @@
 #include "stdlib.h"
 #include "time.h"
 #include "windows.h"
+#include "conio.h"
 
 void go_random();
 
@@ -12,34 +13,37 @@ int main() {
     return 0;
 }
 
-void print_car(int car1, int car2) {
+void print_car(int arr[], int length) {
     printf("--------------------\n");
-    printf("CAR#1:");
-    for (int i = 0; i < car1; i++) {
-        printf("*");
+    for (int z = 0; z < length; z++) {
+        printf("CAR#%d:", z + 1);
+        for (int i = 0; i < arr[z]; i++) {
+            printf("*");
+        }
+        printf("\n");
     }
-    printf("\n");
-
-    printf("CAR#2:");
-    for (int i = 0; i < car2; i++) {
-        printf("*");
-    }
-    printf("\n");
     printf("--------------------\n");
     Sleep(1000);
-    system("cls");
 }
 
 void go_random() {
     srand(time(NULL));
-    int a = 0, b = 0;
+    int len = 3;
+    int array[len];
     for (int i = 0; i < 10; i++) {
-        a += rand() % 3;
-        b += rand() % 3;
-        print_car(a, b);
-        if (a > 10 || b > 10) {
-            return;
+        for (int j = 0; j < len; j++) {
+            array[j] += rand() % 3;
         }
+        print_car(array, len);
+        for (int j = 0; j < len; j++) {
+            if (array[j] > 10) {
+                printf("\nCar#%d wins!!", j+1);
+                Sleep(1000);
+                _getch();
+                return;
+            }
+        }
+        system("cls");
     }
     Sleep(10000);
 }
