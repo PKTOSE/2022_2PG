@@ -70,6 +70,9 @@ int do_login() {
     }
 }
 
+/*
+ * ·Î±×¾Æ¿ô
+ */
 void do_logout() {
     if (is_login == 1) {
         is_login = 0;
