@@ -23,3 +23,4 @@ add_executable(week8_week8_2 week8/week8_2.c)
 
 add_executable(week9_Quiz02_1 week9/Quiz02_1.c)
 add_executable(week9_Quiz02_2 week9/Quiz02_2.c)
+add_executable(week9_week9_1 week9/week9_1.c)
