@@ -54,7 +54,7 @@ int do_login() {
             printf("시도횟수를 초과했습니다. 잠시 후 다시 시도해주세요\n");
             return 2;// 시도횟수 초과
         }
-        int pwd = 0, input = 1;
+        int pwd = 0, input = 1;  // pwd로 비밀번호 설정
         printf("비밀번호를 입력해주세요>> ");
         scanf("%d", &input);
         getchar();
