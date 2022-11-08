@@ -42,3 +42,4 @@ int main(void) {
     inverse(image);
     return 0;
 }
+
