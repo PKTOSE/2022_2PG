@@ -21,21 +21,5 @@ int main() {
     printf("왼쪽 센서와 거리: %.2lf\n", sensorData[0]);
     printf("가운데 센서와 거리: %.2lf\n", sensorData[1]);
     printf("오른쪽 센서와 거리: %.2lf\n", sensorData[2]);
-    double grades[SIZE] = {3.6, 4.1, 2.7, 3.8, 4.4, 2.4, 3.4, 3.6, 1.9, 4.5};
-    double scores[10] = {0};
-    convert(grades, scores, SIZE);
-    for(int i = 0; i<SIZE ; i++){
-        printf("STUDENT%d: %.1lf -> %03.2lf\n", i, grades[i], scores[i]);
-    }
     return 0;
-}
-
-// grades includes 10 data
-void convert(double *grades, double *scores, int size) {
-    double scr = 0.0;
-    for (int i = 0; i < size; i++) {
-        scr = grades[i];
-        scr = scr / 4.5 * 100.0;
-        scores[i] = scr;
-    }
 }
