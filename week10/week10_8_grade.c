@@ -4,8 +4,8 @@
 #include "stdio.h"
 #define SIZE 10
 // grades includes 10 data
-void convert(double *grades, double *scores, int size) {
-    double scr = 0.0;
+void convert(const double *grades, double *scores, int size) {
+    double scr;
     for (int i = 0; i < size; i++) {
         scr = grades[i];
         scr = scr / 4.5 * 100.0;
