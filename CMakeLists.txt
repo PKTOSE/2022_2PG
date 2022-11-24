@@ -44,3 +44,6 @@ add_executable(week11_week11_input-print-ascii week11/week11_input-print-ascii.c
 add_executable(week11_week11_handle-school-id week11/week11_handle-school-id.c)
 add_executable(week11_week11_delete-space week11/week11_delete-space.c)
 add_executable(week12_week12_count_char week12/week12_count_char.c)
+add_executable(week12_week12_tokenizer week12/week12_tokenizer.c)
+add_executable(week12_week12_1 week12/week12_1.c)
+add_executable(week12_week12_dict week12/week12_dict.c)
